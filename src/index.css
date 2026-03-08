@@ -1,0 +1,59 @@
+@font-face {
+  font-family: clash-royale-font;
+  src: url(./assets/fonts/Clash_Regular.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: clash-royale-font;
+  src: url(./assets/fonts/Clash_Bold.otf);
+  font-weight: bold;
+}
+html,
+body {
+  font-family: clash-royale-font;
+  font-weight: normal;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 2rem 3rem;
+  gap: 1rem;
+}
+
+#tagLine {
+  font-size: smaller;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  place-items: center;
+}
+
+img {
+  width: 170px;
+  background-color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  width: min(200px, 100%);
+  height: 230px;
+  cursor: pointer;
+  background-color: chocolate;
+}
+
+.cardName {
+  color: white;
+}
