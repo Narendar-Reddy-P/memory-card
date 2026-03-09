@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Archer from "./assets/images/Archer.png";
 import ArcherQueen from "./assets/images/ArcherQueen.png";
 import MightyMiner from "./assets/images/MightyMiner.png";
@@ -34,7 +34,9 @@ let data = [
 export default function App() {
   const [cards, setCards] = useState(data);
   const [score, setScore] = useState(0);
-  const [bestScore, setBestScore] = useState(0);
+  const [bestScore, setBestScore] = useState(function () {
+    return localStorage.getItem(`bestScore`);
+  });
 
   function shuffle(array) {
     let i = array.length,
@@ -57,6 +59,8 @@ export default function App() {
       setScore(score + 1);
       if (score + 1 > bestScore) {
         setBestScore(score + 1);
+
+        // localStorage.setItem("bestScore", `${score + 1}`); better to keep this in useEffect
       }
       setCards(
         shuffle(
@@ -73,6 +77,12 @@ export default function App() {
     console.log(cards);
   }
 
+  useEffect(
+    function () {
+      localStorage.setItem("bestScore", bestScore);
+    },
+    [bestScore],
+  );
   return (
     <>
       <header>
