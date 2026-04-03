@@ -88,9 +88,8 @@ export default function App() {
       <header>
         <div>
           <h1>Clash Royale's Memory Game</h1>
-          <p id="tagLine">
-            Get points clicking on a card but don't click on any more than once
-          </p>
+          <p id="tagLine">Get points clicking on a card</p>
+          <p id="tagLine">But don't click on any more than once</p>
         </div>
         <div>
           <p>Score: {score}</p>
