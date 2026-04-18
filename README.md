@@ -1,5 +1,7 @@
 # Clash Royale Memory Card Game
 
+**[Live Preview](https://cr-memory-card-game-pnr.vercel.app/)**
+
 A simple and fun memory card game built with **React**, **Vite**, and **Tailwind CSS**. 
 The objective of the game is to click on a card to earn a point, but the catch is—you must not click on the same card more than once. The cards shuffle after every selection, testing your memory and concentration!
 
