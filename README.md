@@ -3,6 +3,8 @@
 A simple and fun memory card game built with **React**, **Vite**, and **Tailwind CSS**. 
 The objective of the game is to click on a card to earn a point, but the catch is—you must not click on the same card more than once. The cards shuffle after every selection, testing your memory and concentration!
 
+> *This project was completed as part of [The Odin Project](https://www.theodinproject.com/) curriculum.*
+
 ## Features
 
 - **Dynamic Card Shuffling**: Cards rearrange their positions randomly after every click.
